@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Privacidade — Look360</title>
+  <meta name="description" content="Política de privacidade do Look360 — seus dados ficam apenas no seu iPhone. Nada é coletado ou enviado para servidores externos.">
+
+  <meta property="og:title" content="Privacidade — Look360">
+  <meta property="og:description" content="Política de privacidade do Look360 — seus dados ficam apenas no seu iPhone. Nada é coletado ou enviado para servidores externos.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#0A0A0A">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'look-black': '#0A0A0A',
+            'look-card': '#1A1A1A',
+            'look-gold': '#D4AF37',
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+          },
+        },
+      },
+    }
+  </script>
+
+  <style>
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      background-color: #0A0A0A;
+      color: #FFFFFF;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    .gold-border { border-color: rgba(212, 175, 55, 0.18); }
+    .gold-border-strong { border-color: rgba(212, 175, 55, 0.35); }
+    .smooth { transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1); }
+    .prose-look h2 {
+      color: #FFFFFF;
+      font-size: 1.5rem;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      margin-top: 2.5rem;
+      margin-bottom: 1rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 1px solid rgba(212, 175, 55, 0.18);
+    }
+    .prose-look p {
+      color: #D1D5DB;
+      font-weight: 300;
+      line-height: 1.75;
+      margin-bottom: 1rem;
+    }
+    .prose-look ul {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 1rem;
+    }
+    .prose-look li {
+      color: #D1D5DB;
+      font-weight: 300;
+      line-height: 1.75;
+      padding-left: 1.5rem;
+      position: relative;
+      margin-bottom: 0.5rem;
+    }
+    .prose-look li::before {
+      content: "—";
+      color: #D4AF37;
+      position: absolute;
+      left: 0;
+    }
+    .prose-look strong { color: #FFFFFF; font-weight: 600; }
+    .prose-look a { color: #D4AF37; text-decoration: none; transition: opacity 0.2s; }
+    .prose-look a:hover { opacity: 0.8; }
+  </style>
+</head>
+<body class="bg-look-black text-white">
+
+  <!-- HEADER -->
+  <header class="border-b gold-border sticky top-0 z-50 bg-look-black/90 backdrop-blur">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="../" class="flex items-center gap-3 smooth hover:opacity-80">
+        <span class="w-8 h-8 rounded-full flex items-center justify-center"
+              style="background-color: #D4AF37;">
+          <span class="text-look-black text-sm font-extrabold">L</span>
+        </span>
+        <span class="text-lg font-bold tracking-tight">Look360</span>
+      </a>
+      <a href="../" class="text-gray-400 hover:text-look-gold smooth text-sm font-medium tracking-wide">
+        ← Voltar ao início
+      </a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="px-6 pt-20 pb-12 md:pt-28 md:pb-16">
+    <div class="max-w-3xl mx-auto text-center">
+      <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-6">
+        Privacidade
+      </h1>
+      <p class="text-look-gold text-base md:text-lg font-medium tracking-wide uppercase">
+        Última atualização: 31 de maio de 2026
+      </p>
+    </div>
+  </section>
+
+  <!-- CONTENT -->
+  <section class="px-6 pb-24 md:pb-32">
+    <div class="max-w-3xl mx-auto">
+
+      <!-- Resumo destacado -->
+      <div class="bg-look-card border gold-border-strong rounded-2xl p-6 md:p-8 mb-12">
+        <p class="text-look-gold text-sm uppercase tracking-widest font-semibold mb-3">Resumo</p>
+        <p class="text-gray-200 text-base md:text-lg leading-relaxed font-light">
+          O Look360 é um aplicativo de orçamentos para profissionais autônomos que respeita totalmente sua privacidade.
+          <strong class="text-white font-semibold">Nenhum dado pessoal seu é coletado, armazenado ou enviado para servidores externos pelo desenvolvedor.</strong>
+        </p>
+      </div>
+
+      <article class="prose-look">
+
+        <h2>Quais dados o app guarda?</h2>
+        <p>
+          O Look360 armazena, <strong>apenas no seu próprio aparelho</strong>, os seguintes dados que você opcionalmente fornece:
+        </p>
+        <ul>
+          <li>Seu nome e apelido</li>
+          <li>Seu e-mail (opcional)</li>
+          <li>Seu telefone (opcional)</li>
+          <li>Dados da sua empresa (nome, telefone, e-mail, CNPJ/CPF, chave PIX) — todos opcionais</li>
+          <li>Orçamentos que você cria</li>
+          <li>Senha (em formato criptografado, nunca em texto puro)</li>
+          <li>PIN de segurança (em formato criptografado, nunca em texto puro)</li>
+          <li>Sua chave de API de IA, se você optar por usar o Assistente (guardada no cofre seguro do sistema operacional)</li>
+        </ul>
+        <p>
+          Todos esses dados ficam exclusivamente no seu dispositivo. Se você desinstalar o app, todos os dados são apagados permanentemente.
+        </p>
+
+        <h2>Dados enviados para terceiros</h2>
+        <p>
+          O Look360 <strong>não envia dados para servidores nossos</strong>. Não temos servidor.
+        </p>
+        <p>
+          Quando você opta por usar o Assistente de IA, o conteúdo do seu orçamento é enviado <strong>diretamente</strong> para o provedor que você escolheu (OpenAI ou Anthropic), usando a sua própria chave de API. Sua chave nunca passa por nós.
+        </p>
+
+        <h2>Permissões do dispositivo</h2>
+        <p>
+          O Look360 pode solicitar:
+        </p>
+        <ul>
+          <li><strong>Face ID / Touch ID</strong>: apenas para autenticar o acesso ao app, com seu consentimento explícito.</li>
+          <li><strong>Compartilhamento (Share Sheet)</strong>: apenas quando você toca em "Compartilhar PDF" para enviar um orçamento.</li>
+        </ul>
+
+        <h2>Cookies, rastreamento e publicidade</h2>
+        <p>
+          O Look360 não usa cookies, não tem rastreadores e não exibe anúncios.
+        </p>
+
+        <h2>Crianças</h2>
+        <p>
+          O Look360 não é direcionado a crianças. Não coletamos intencionalmente dados de menores de 13 anos.
+        </p>
+
+        <h2>Alterações nesta política</h2>
+        <p>
+          Podemos atualizar esta política. Mudanças serão publicadas nesta mesma página com nova "Última atualização".
+        </p>
+
+        <h2>Contato</h2>
+        <p>
+          Para dúvidas sobre privacidade: <a href="mailto:gd665742@gmail.com">gd665742@gmail.com</a>
+        </p>
+
+      </article>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="border-t gold-border-strong">
+    <div class="max-w-6xl mx-auto px-6 py-12 flex flex-col md:flex-row items-center justify-between gap-6">
+
+      <div class="flex items-center gap-8">
+        <a href="../" class="text-gray-400 hover:text-look-gold smooth text-sm font-medium tracking-wide">
+          Início
+        </a>
+        <a href="../suporte" class="text-gray-400 hover:text-look-gold smooth text-sm font-medium tracking-wide">
+          Suporte
+        </a>
+        <a href="../privacidade" class="text-gray-400 hover:text-look-gold smooth text-sm font-medium tracking-wide">
+          Privacidade
+        </a>
+      </div>
+
+      <p class="text-gray-500 text-sm font-light text-center md:text-right">
+        © 2026 Gabriel Dias — Look360
+      </p>
+
+    </div>
+  </footer>
+
+</body>
+</html>

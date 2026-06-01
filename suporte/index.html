@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Suporte — Look360</title>
+  <meta name="description" content="Central de suporte do Look360 — tire suas dúvidas sobre orçamentos, exportação em PDF, PIN, dados locais e Assistente de IA.">
+
+  <meta property="og:title" content="Suporte — Look360">
+  <meta property="og:description" content="Central de suporte do Look360 — tire suas dúvidas sobre orçamentos, exportação em PDF, PIN, dados locais e Assistente de IA.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#0A0A0A">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'look-black': '#0A0A0A',
+            'look-card': '#1A1A1A',
+            'look-gold': '#D4AF37',
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+          },
+        },
+      },
+    }
+  </script>
+
+  <style>
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      background-color: #0A0A0A;
+      color: #FFFFFF;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    .gold-border { border-color: rgba(212, 175, 55, 0.18); }
+    .gold-border-strong { border-color: rgba(212, 175, 55, 0.35); }
+    .smooth { transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1); }
+    .cta-hover:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 20px 40px -10px rgba(212, 175, 55, 0.35);
+    }
+    .contact-card {
+      box-shadow: 0 20px 60px -20px rgba(212, 175, 55, 0.18);
+    }
+    details > summary { list-style: none; cursor: pointer; }
+    details > summary::-webkit-details-marker { display: none; }
+    details[open] .faq-icon { transform: rotate(45deg); }
+    .faq-icon { transition: transform 0.3s ease; }
+  </style>
+</head>
+<body class="bg-look-black text-white">
+
+  <!-- HEADER -->
+  <header class="border-b gold-border sticky top-0 z-50 bg-look-black/90 backdrop-blur">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="../" class="flex items-center gap-3 smooth hover:opacity-80">
+        <span class="w-8 h-8 rounded-full flex items-center justify-center"
+              style="background-color: #D4AF37;">
+          <span class="text-look-black text-sm font-extrabold">L</span>
+        </span>
+        <span class="text-lg font-bold tracking-tight">Look360</span>
+      </a>
+      <a href="../" class="text-gray-400 hover:text-look-gold smooth text-sm font-medium tracking-wide">
+        ← Voltar ao início
+      </a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="px-6 pt-20 pb-16 md:pt-28 md:pb-20">
+    <div class="max-w-3xl mx-auto text-center">
+      <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-6">
+        Suporte
+      </h1>
+      <p class="text-look-gold text-xl md:text-2xl font-medium tracking-wide">
+        Estamos aqui para ajudar
+      </p>
+    </div>
+  </section>
+
+  <!-- CONTACT CARD -->
+  <section class="px-6 pb-20 md:pb-28">
+    <div class="max-w-2xl mx-auto">
+      <div class="bg-look-card border gold-border-strong rounded-3xl p-8 md:p-12 contact-card text-center">
+
+        <p class="text-gray-400 text-sm uppercase tracking-widest mb-4 font-medium">
+          Fale com a gente
+        </p>
+
+        <a href="mailto:suporte.look360@gmail.com"
+           class="block text-look-gold text-2xl md:text-3xl font-semibold tracking-tight mb-8 break-all hover:opacity-80 smooth">
+          suporte.look360@gmail.com
+        </a>
+
+        <div class="border-t gold-border pt-6 mb-8">
+          <p class="text-gray-300 text-base md:text-lg font-light leading-relaxed">
+            <span class="block text-white font-medium mb-1">Horário de atendimento</span>
+            Segunda a sexta, das 9h às 20h
+            <span class="block text-gray-500 text-sm mt-1">(horário de Brasília)</span>
+          </p>
+        </div>
+
+        <a href="mailto:suporte.look360@gmail.com"
+           class="inline-block bg-look-gold text-look-black font-semibold text-base md:text-lg px-10 py-4 rounded-full smooth cta-hover">
+          Enviar email
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="px-6 pb-24 md:pb-32">
+    <div class="max-w-3xl mx-auto">
+
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-5xl font-bold tracking-tight mb-4">
+          Perguntas frequentes
+        </h2>
+      </div>
+
+      <div class="space-y-4">
+
+        <details class="bg-look-card border gold-border rounded-2xl smooth group hover:border-look-gold/40">
+          <summary class="flex items-center justify-between p-6 md:p-7 gap-4">
+            <span class="text-lg font-semibold">Como faço pra criar um orçamento?</span>
+            <span class="faq-icon text-look-gold text-2xl font-light leading-none shrink-0">+</span>
+          </summary>
+          <div class="px-6 md:px-7 pb-6 md:pb-7 text-gray-400 leading-relaxed font-light">
+            Abra o app, toque em "Novo orçamento", escolha o tipo de serviço, preencha os dados do cliente e itens, e toque em salvar. Depois você pode exportar como PDF.
+          </div>
+        </details>
+
+        <details class="bg-look-card border gold-border rounded-2xl smooth group hover:border-look-gold/40">
+          <summary class="flex items-center justify-between p-6 md:p-7 gap-4">
+            <span class="text-lg font-semibold">Como exporto e mando o orçamento pelo WhatsApp?</span>
+            <span class="faq-icon text-look-gold text-2xl font-light leading-none shrink-0">+</span>
+          </summary>
+          <div class="px-6 md:px-7 pb-6 md:pb-7 text-gray-400 leading-relaxed font-light">
+            Abra o orçamento criado, toque em compartilhar, escolha WhatsApp e selecione o contato do cliente.
+          </div>
+        </details>
+
+        <details class="bg-look-card border gold-border rounded-2xl smooth group hover:border-look-gold/40">
+          <summary class="flex items-center justify-between p-6 md:p-7 gap-4">
+            <span class="text-lg font-semibold">Esqueci meu PIN. O que fazer?</span>
+            <span class="faq-icon text-look-gold text-2xl font-light leading-none shrink-0">+</span>
+          </summary>
+          <div class="px-6 md:px-7 pb-6 md:pb-7 text-gray-400 leading-relaxed font-light">
+            Por segurança, o PIN não pode ser recuperado. Você precisa desinstalar e reinstalar o app. Os dados salvos serão perdidos. Recomendamos exportar PDFs importantes regularmente.
+          </div>
+        </details>
+
+        <details class="bg-look-card border gold-border rounded-2xl smooth group hover:border-look-gold/40">
+          <summary class="flex items-center justify-between p-6 md:p-7 gap-4">
+            <span class="text-lg font-semibold">Meus dados ficam onde?</span>
+            <span class="faq-icon text-look-gold text-2xl font-light leading-none shrink-0">+</span>
+          </summary>
+          <div class="px-6 md:px-7 pb-6 md:pb-7 text-gray-400 leading-relaxed font-light">
+            Apenas no seu iPhone. O Look360 não envia dados para servidores externos. Tudo é local.
+          </div>
+        </details>
+
+        <details class="bg-look-card border gold-border rounded-2xl smooth group hover:border-look-gold/40">
+          <summary class="flex items-center justify-between p-6 md:p-7 gap-4">
+            <span class="text-lg font-semibold">Como funciona o assistente de IA?</span>
+            <span class="faq-icon text-look-gold text-2xl font-light leading-none shrink-0">+</span>
+          </summary>
+          <div class="px-6 md:px-7 pb-6 md:pb-7 text-gray-400 leading-relaxed font-light">
+            Você precisa criar uma conta na Anthropic ou OpenAI e conectar sua própria chave. O app não cobra pelo uso da IA — você paga diretamente ao provedor. As estimativas são gerais e não substituem pesquisa de mercado local.
+          </div>
+        </details>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="border-t gold-border-strong">
+    <div class="max-w-6xl mx-auto px-6 py-12 flex flex-col md:flex-row items-center justify-between gap-6">
+
+      <div class="flex items-center gap-8">
+        <a href="../" class="text-gray-400 hover:text-look-gold smooth text-sm font-medium tracking-wide">
+          Início
+        </a>
+        <a href="../suporte" class="text-gray-400 hover:text-look-gold smooth text-sm font-medium tracking-wide">
+          Suporte
+        </a>
+        <a href="../privacidade" class="text-gray-400 hover:text-look-gold smooth text-sm font-medium tracking-wide">
+          Privacidade
+        </a>
+      </div>
+
+      <p class="text-gray-500 text-sm font-light text-center md:text-right">
+        © 2026 Gabriel Dias — Look360
+      </p>
+
+    </div>
+  </footer>
+
+</body>
+</html>
