@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Para autônomos — Look360</title>
+  <meta name="description" content="Veja como o Look360 se adapta ao trabalho de eletricistas, pintores, encanadores, diaristas e serviços gerais.">
+
+  <meta property="og:title" content="Para autônomos — Look360">
+  <meta property="og:description" content="Veja como o Look360 se adapta ao trabalho de eletricistas, pintores, encanadores, diaristas e serviços gerais.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#0A0A0A">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'look-black': '#0A0A0A',
+            'look-card': '#1A1A1A',
+            'look-gold': '#D4AF37',
+            'look-emerald': '#10B981',
+            'look-emerald-dark': '#059669',
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+          },
+        },
+      },
+    }
+  </script>
+
+  <style>
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      background-color: #0A0A0A;
+      color: #FFFFFF;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    .gold-border { border-color: rgba(212, 175, 55, 0.18); }
+    .gold-border-strong { border-color: rgba(212, 175, 55, 0.35); }
+    .smooth { transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1); }
+    .card-hover:hover {
+      border-color: rgba(212, 175, 55, 0.5);
+      transform: translateY(-4px);
+      box-shadow: 0 20px 50px -20px rgba(212, 175, 55, 0.18);
+    }
+    .cta-hover-green:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 20px 40px -10px rgba(16, 185, 129, 0.4);
+    }
+  </style>
+</head>
+<body class="bg-look-black text-white">
+
+  <!-- HEADER -->
+  <header class="border-b gold-border sticky top-0 z-50 bg-look-black/90 backdrop-blur">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between gap-4">
+      <a href="../" class="flex items-center gap-3 smooth hover:opacity-80 shrink-0">
+        <img src="../logo.png" alt="Look360" class="w-8 h-8 rounded-lg">
+        <span class="text-lg font-bold tracking-tight">Look360</span>
+      </a>
+      <nav class="hidden sm:flex items-center gap-6 md:gap-8">
+        <a href="../sobre" class="text-gray-400 hover:text-look-gold smooth text-sm font-medium tracking-wide">Sobre</a>
+        <a href="../profissionais" class="text-look-gold smooth text-sm font-medium tracking-wide">Profissionais</a>
+        <a href="../suporte" class="text-gray-400 hover:text-look-gold smooth text-sm font-medium tracking-wide">Suporte</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="px-6 pt-20 pb-16 md:pt-28 md:pb-20">
+    <div class="max-w-3xl mx-auto text-center">
+      <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-6">
+        Para todo tipo de autônomo
+      </h1>
+      <p class="text-look-gold text-xl md:text-2xl font-medium tracking-wide">
+        Veja como o Look360 se adapta ao seu trabalho
+      </p>
+    </div>
+  </section>
+
+  <!-- CARDS -->
+  <section class="px-6 pb-16 md:pb-24">
+    <div class="max-w-6xl mx-auto">
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+
+        <div class="bg-look-card border gold-border rounded-2xl p-8 smooth card-hover">
+          <p class="text-look-gold text-xs uppercase tracking-widest font-semibold mb-3">01</p>
+          <h3 class="text-2xl font-bold mb-4 tracking-tight">Eletricistas</h3>
+          <p class="text-gray-400 leading-relaxed font-light">
+            Calcule mão de obra, materiais, instalações e manutenções prediais. Inclua especificações técnicas e tempo estimado de obra.
+          </p>
+        </div>
+
+        <div class="bg-look-card border gold-border rounded-2xl p-8 smooth card-hover">
+          <p class="text-look-gold text-xs uppercase tracking-widest font-semibold mb-3">02</p>
+          <h3 class="text-2xl font-bold mb-4 tracking-tight">Pintores</h3>
+          <p class="text-gray-400 leading-relaxed font-light">
+            Calcule por metro quadrado ou por ambiente. Inclua tipo de tinta, quantidade de demãos, preparo de superfície e pintura fina.
+          </p>
+        </div>
+
+        <div class="bg-look-card border gold-border rounded-2xl p-8 smooth card-hover">
+          <p class="text-look-gold text-xs uppercase tracking-widest font-semibold mb-3">03</p>
+          <h3 class="text-2xl font-bold mb-4 tracking-tight">Encanadores</h3>
+          <p class="text-gray-400 leading-relaxed font-light">
+            Reparos pontuais ou instalações completas. Inclua materiais, horas de trabalho e visita técnica se necessário.
+          </p>
+        </div>
+
+        <div class="bg-look-card border gold-border rounded-2xl p-8 smooth card-hover">
+          <p class="text-look-gold text-xs uppercase tracking-widest font-semibold mb-3">04</p>
+          <h3 class="text-2xl font-bold mb-4 tracking-tight">Diaristas e serviços de limpeza</h3>
+          <p class="text-gray-400 leading-relaxed font-light">
+            Limpeza por hora, diária ou serviço completo. Detalhe ambientes incluídos, materiais e produtos usados.
+          </p>
+        </div>
+
+        <div class="bg-look-card border gold-border rounded-2xl p-8 smooth card-hover">
+          <p class="text-look-gold text-xs uppercase tracking-widest font-semibold mb-3">05</p>
+          <h3 class="text-2xl font-bold mb-4 tracking-tight">Serviços gerais</h3>
+          <p class="text-gray-400 leading-relaxed font-light">
+            Montagens, manutenções, pequenos reparos e tudo mais que seu negócio oferece. Total flexibilidade.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="px-6 pb-24 md:pb-32">
+    <div class="max-w-3xl mx-auto text-center">
+      <p class="text-2xl md:text-3xl font-bold tracking-tight mb-8">
+        Não importa o serviço, o Look360 se adapta.
+      </p>
+      <a href="../"
+         class="inline-block bg-look-emerald hover:bg-look-emerald-dark text-white font-semibold text-base md:text-lg px-10 py-4 rounded-full smooth cta-hover-green">
+        Voltar ao início
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="border-t gold-border-strong">
+    <div class="max-w-6xl mx-auto px-6 py-12 flex flex-col md:flex-row items-center justify-between gap-6">
+
+      <div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 md:gap-x-8">
+        <a href="../" class="text-gray-400 hover:text-look-gold smooth text-sm font-medium tracking-wide">Início</a>
+        <a href="../sobre" class="text-gray-400 hover:text-look-gold smooth text-sm font-medium tracking-wide">Sobre</a>
+        <a href="../profissionais" class="text-gray-400 hover:text-look-gold smooth text-sm font-medium tracking-wide">Profissionais</a>
+        <a href="../suporte" class="text-gray-400 hover:text-look-gold smooth text-sm font-medium tracking-wide">Suporte</a>
+        <a href="../privacidade" class="text-gray-400 hover:text-look-gold smooth text-sm font-medium tracking-wide">Privacidade</a>
+      </div>
+
+      <p class="text-gray-500 text-sm font-light text-center md:text-right">
+        © 2026 Gabriel Dias — Look360
+      </p>
+
+    </div>
+  </footer>
+
+</body>
+</html>
